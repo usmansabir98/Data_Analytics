@@ -1,0 +1,7 @@
+# Q. What is loss matrix in rpart?
+# Ans. we specify the 'parms' parameter in which we assign a matrix to loss parameter
+# containing 3 arguments "vector, byrow and nrow"
+# vector contains the weights assigned, we assign 0 to diagonal and non-zero to non-diagonal elements
+# byrow =TRUE means that we interpret the vector as distributed by rows i.e. 1st 2 elements are row 1
+# and the last 2 elements are row 2. then we specify nrows meaning how many rows will the matrix contain.
+# we specify a weight of 20 to FALSE NEGATIVE as we are intolerant of predicting 0 for actual 1.
